@@ -85,7 +85,7 @@ A typical run looks like this :
         --output_path $output_file_path \
         --name $label_name
 
-The output file is provided in .csv form. Last column is the number of 4 digit matches/ 6.  
+The output file is provided in `label_name`.csv form. Last column is the number of 4 digit matches/ 6.  
 
 **!** This script will only run if the input file is a file formatted by the PHLAT summary.R script or our corrected answer.
 
