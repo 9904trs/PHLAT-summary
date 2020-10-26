@@ -60,3 +60,34 @@ A typical run looks like this :
 * ```--output_path``` : The directory to save the Summary results.  
 * ```--name``` : Summary file label 
 
+
+## Performance Accuaracy Calculation
+
+Our project analyzed only the Caucasian population dataset of E-MATB-197.  
+And we were only given the correct answer for HLA-A,B and C.  
+To calculate the performance accuracy using this script, input_file must follow format below.
+
+**Input file format**  
+ `1st column` : dataset label  
+ `2nd column` : HLA-A-Allele1  
+ `3rd column` : HLA-A-Allele2  
+ `4th column` : HLA-B-Allele1  
+ `5th column` : HLA-B-Allele2  
+ `6th column` : HLA-C-Allele1  
+ `7th column` : HLA-C-Allele2  
+ 
+
+A typical run looks like this :
+
+    Rscript Performance.R \
+        --standatd_file $gold_standard_file_path \
+        --summary_file $PHLAT_summary_file_path \
+        --output_path $output_file_path \
+        --name $label_name
+
+The output file is provided in .csv form.Last column is the number of 4 digit matches/ 6.  
+
+**!** This script will only run if the input file is a file formatted by the PHLAT summary.R script or our corrected answer.
+
+
+
