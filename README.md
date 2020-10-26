@@ -61,7 +61,7 @@ A typical run looks like this :
 * ```--name``` : Summary file label 
 
 
-## Performance Accuaracy Calculation
+## Performance Accuracy Calculation
 
 Our project analyzed only the Caucasian population dataset of E-MATB-197.  
 And we were only given the correct answer for HLA-A,B and C.  
@@ -85,7 +85,7 @@ A typical run looks like this :
         --output_path $output_file_path \
         --name $label_name
 
-The output file is provided in .csv form.Last column is the number of 4 digit matches/ 6.  
+The output file is provided in .csv form. Last column is the number of 4 digit matches/ 6.  
 
 **!** This script will only run if the input file is a file formatted by the PHLAT summary.R script or our corrected answer.
 
