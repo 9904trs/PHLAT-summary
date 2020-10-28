@@ -63,9 +63,8 @@ A typical run looks like this :
 
 ## Performance Accuracy Calculation
 
-Our project analyzed only the Caucasian population dataset of E-MATB-197.  
-And we only provide the correct answer for HLA-A,B and C. `gold_standard.csv`  
 To calculate the performance accuracy using this script, input_file must follow format below.
+The correct answer of the gold standard dataset you will compare must be the same format.
 
 **Input file format**  
  `1st column` : dataset label  
